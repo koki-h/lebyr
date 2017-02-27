@@ -1,6 +1,7 @@
 #!/bin/bash
 JUMAN_SOURCE_PATH="../juman-7.01"
 JUMANPP_SOURCE_PATH="../jumanpp-1.01"
+
 function import_dic {
 	DIC_NAME=$1
 	INDIR=$2
@@ -23,7 +24,9 @@ function import_jumandic {
 	import_dic $DIC_NAME $INDIR $OUTDIR
 }
 
-#import_jumandic dic
+import_jumandic dic
+import_jumandic autodic
+import_jumandic wikipediadic
 import_jumanppdic dic
 import_jumanppdic onomatopedic
 import_jumanppdic webdic
